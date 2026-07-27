@@ -32,7 +32,7 @@ import './editor.scss';
 export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
-			{ __( 'Responsive Spacer – hello from the editor!', 'responsive-spacer' ) }
+			{ __( 'Responsive Spacer – hello from the editor!!!', 'responsive-spacer' ) }
 		</p>
 	);
 }
