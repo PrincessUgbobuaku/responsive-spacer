@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "zonefitness/responsive-spacer",
+  "version": "0.1.0",
+  "title": "Responsive Spacer",
+  "category": "widgets",
+  "icon": "editor-expand",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "desktopHeight": {
+      "type": "number",
+      "default": 80
+    },
+    "tabletHeight": {
+      "type": "number",
+      "default": 60
+    },
+    "mobileHeight": {
+      "type": "number",
+      "default": 40
+    }
+  },
+  "textdomain": "responsive-spacer",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
