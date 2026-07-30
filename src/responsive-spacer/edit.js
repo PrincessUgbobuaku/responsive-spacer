@@ -34,18 +34,43 @@ import { PanelBody, RangeControl } from "@wordpress/components"; //PanelBody →
  */
 export default function Edit({ attributes, setAttributes }) {
 	const { desktopHeight, tabletHeight, mobileHeight } = attributes; //one object that contains multiple values
-	<>
-		<InspectorControls>
-			<PanelBody title="Responsive Spacer" initialOpen={true}>
-				<RangeControl
-					label="Desktop Height"
-					value={desktopHeight}
-					onChange={(value) => setAttributes({ desktopHeight: value })}
-					min={0}
-					max={500}
-				/>
-			</PanelBody>
-		</InspectorControls>
-		return <p {...useBlockProps()}>Responsive Spacer</p>;
-	</>;
+	return (
+		<>
+			<InspectorControls>
+				<PanelBody title="Responsive Spacer Panel" initialOpen={true}>
+					<RangeControl
+						label="Desktop height"
+						value={desktopHeight}
+						onChange={(value) => setAttributes({ desktopHeight: value })}
+						min={0}
+						max={500}
+					/> 
+					<RangeControl
+						label="Tablet Height"
+						value={tabletHeight}
+						onChange={(value) => setAttributes({ tabletHeight: value })}
+						min={0}
+						max={500}
+					/>
+					<RangeControl
+						label="Mobile Height"
+						value={mobileHeight}
+						onChange={(value) => setAttributes({ mobileHeight: value })}
+						min={0}
+						max={500}
+					/>
+				</PanelBody>
+			</InspectorControls>
+			<div
+				{...useBlockProps()}
+				style={{
+					"--desktop-height": `${desktopHeight}px`,
+					"--tablet-height": `${tabletHeight}px`,
+					"--mobile-height": `${mobileHeight}px`,
+				}}
+			>
+				Responsive Spacer
+			</div>
+		</>
+	);
 }

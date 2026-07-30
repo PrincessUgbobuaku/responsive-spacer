@@ -6,8 +6,26 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-create-block-responsive-spacer {
-  border: 1px dotted #f00;
+.wp-block-zonefitness-responsive-spacer {
+  height: var(--desktop-height);
+}
+@media (max-width: 1024px) {
+  .wp-block-zonefitness-responsive-spacer {
+    height: var(--tablet-height);
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-zonefitness-responsive-spacer {
+    height: var(--mobile-height);
+  }
+}
+.wp-block-zonefitness-responsive-spacer {
+  background: #e5e5e5;
+  border: 2px dashed #999;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map*/
