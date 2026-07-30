@@ -195,10 +195,22 @@ __webpack_require__.r(__webpack_exports__);
  * @return {Element} Element to render.
  */
 
-function save() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+function save({
+  attributes
+}) {
+  const {
+    desktopHeight,
+    tabletHeight,
+    mobileHeight
+  } = attributes;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: 'Responsive Spacer – hello from the saved content!'
+    style: {
+      "--desktop-height": `${desktopHeight}px`,
+      "--tablet-height": `${tabletHeight}px`,
+      "--mobile-height": `${mobileHeight}px`
+    },
+    children: "Responsive Spacer"
   });
 }
 
