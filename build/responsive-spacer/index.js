@@ -209,8 +209,7 @@ function save({
       "--desktop-height": `${desktopHeight}px`,
       "--tablet-height": `${tabletHeight}px`,
       "--mobile-height": `${mobileHeight}px`
-    },
-    children: "Responsive Spacer"
+    }
   });
 }
 

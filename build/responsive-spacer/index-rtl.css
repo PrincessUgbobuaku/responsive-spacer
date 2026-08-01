@@ -14,7 +14,7 @@
     height: var(--tablet-height);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 781px) {
   .wp-block-zonefitness-responsive-spacer {
     height: var(--mobile-height);
   }

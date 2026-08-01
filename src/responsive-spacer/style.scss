@@ -6,7 +6,24 @@
  */
 
 .wp-block-zonefitness-responsive-spacer {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	// background-color: #21759b;
+	// color: #fff;
+	// padding: 2px;
+
+	height: var(--desktop-height);
+
+    @media (max-width: 1024px) {
+        height: var(--tablet-height);
+    }
+
+    @media (max-width: 781px) {
+        height: var(--mobile-height);
+    }
+
+    // background: #e5e5e5;
+    // border: 2px dashed #999;
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }

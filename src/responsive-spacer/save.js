@@ -25,8 +25,6 @@ export default function save({ attributes }) {
 				"--tablet-height": `${tabletHeight}px`,
 				"--mobile-height": `${mobileHeight}px`,
 			}}
-		>
-			Responsive Spacer
-		</div>
+		/>
 	);
 }

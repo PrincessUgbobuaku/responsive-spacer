@@ -8,9 +8,17 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-zonefitness-responsive-spacer {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+  height: var(--desktop-height);
+}
+@media (max-width: 1024px) {
+  .wp-block-zonefitness-responsive-spacer {
+    height: var(--tablet-height);
+  }
+}
+@media (max-width: 781px) {
+  .wp-block-zonefitness-responsive-spacer {
+    height: var(--mobile-height);
+  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/
